@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>iscoo phone — إكسسوارات هاتف فاخرة</title>
+
+<!-- Favicon / Logo -->
+<link rel="icon" type="image/png" href="logo.jfif">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@400;500;600;700&family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lang-ar" dir="ltr">
+
+<!-- Slim announcement strip -->
+<div class="announce-bar">
+  <p class="text-block" data-i18n="announce">استغل عرض توصيل ب 100دج لجميع الولايات</p>
+</div>
+
+<div class="brand">
+  <img src="logo.jfif" alt="iscoo phone" class="brand-logo">
+</div>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn" data-lang="ar">AR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <button class="cart-btn" id="openCartBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="cart-label" data-i18n="cart">السلة</span>
+        <span class="cart-badge" id="cartBadge" hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Wide rotating banner: sits between the header (cart + language) and
+     the trust bar / products grid. Images come from HERO_IMAGES in
+     data.js — add/remove filenames there, nothing here needs editing.
+     Auto-advances every 3s; visitors can also swipe/drag it manually. -->
+<section class="hero-banner">
+  <div class="hero-carousel" id="heroCarousel">
+    <div class="hero-track" id="heroTrack"></div>
+  </div>
+  <div class="hero-banner-overlay">
+    <a href="#products" class="hero-cta text-block" data-i18n="heroCta">اكتشف المجموعة</a>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<!-- Trust bar: four quiet credibility signals -->
+<section class="trust-bar">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+      <span class="text-block" data-i18n="trustDelivery">توصيل سريع لكل الولايات</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+      <span class="text-block" data-i18n="trustCod">الدفع عند الاستلام</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg>
+      <span class="text-block" data-i18n="trustAuthentic">جودة مضمونة 100%</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7"></path><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="7" x2="12" y2="20"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
+      <span class="text-block" data-i18n="trustPackaging">تغليف فاخر مع كل طلب</span>
+    </div>
+  </div>
+</section>
+
+<main id="products" class="products-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow text-block" data-i18n="collectionEyebrow">التشكيلة</p>
+      <h2 class="section-title text-block" data-i18n="collectionTitle">اختر إكسسوارك المثالي</h2>
+    </div>
+    <div class="category-tabs" id="categoryTabs"></div>
+    <div class="products-grid" id="productsGrid"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="footer-brand-name" data-i18n="brandName">iscoo phone</span>
+      <p class="footer-tagline text-block" id="footerTagline"></p>
+      <div class="social-row" id="socialRow"></div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title text-block" data-i18n="footerLinksTitle">التشكيلة</p>
+      <div class="footer-link-list" id="footerCategoryList"></div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title text-block" data-i18n="footerContactTitle">تواصل معنا</p>
+      <div class="footer-contact-list">
+        <a id="footerEmail" href="#"></a>
+        <a id="footerPhone" href="#"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span class="text-block" id="footerRights"></span>
+  </div>
+</footer>
+
+<!-- Toast: quiet "added to cart" confirmation — the cart drawer stays closed -->
+<div class="toast" id="toast">
+  <span class="toast-dot"></span>
+  <span class="toast-msg text-block"></span>
+</div>
+
+<!-- ================= PRODUCT DETAIL MODAL ================= -->
+<div class="overlay" id="pdOverlay">
+  <div class="pd-modal" role="dialog" aria-modal="true">
+    <button class="pd-close" id="pdCloseBtn" aria-label="Close">&times;</button>
+    <div class="pd-grid">
+      <!-- Image viewer: swipeable/draggable photo track + a vertical rail
+           of circles down the side (colors get their real color; general
+           "gallery" shots get a neutral circle). Clicking a circle jumps
+           straight to that photo and selects its color, if any. -->
+      <div class="pd-media" id="pdMediaWrap">
+        <div class="pd-track" id="pdTrack"></div>
+        <div class="pd-swatch-rail" id="pdSwatchRail"></div>
+      </div>
+      <div class="pd-info">
+        <p class="pd-category text-block" id="pdCategory"></p>
+        <h2 class="pd-name text-block" id="pdName"></h2>
+        <div class="pd-prices">
+          <span class="pd-price-final price-num" id="pdPriceFinal"></span>
+          <span class="pd-price-original price-num" id="pdPriceOriginal"></span>
+          <span class="pd-discount-pill" id="pdDiscountPill"></span>
+        </div>
+        <p class="pd-desc text-block" id="pdDesc"></p>
+        <div class="pd-stock-line" id="pdStockLine"></div>
+
+        <div class="option-group" id="pdColorGroup">
+          <div class="option-label text-block" data-i18n="color">اللون</div>
+          <div class="pd-color-name text-block" id="pdColorName"></div>
+        </div>
+
+        <div class="option-group" id="pdSizeGroup">
+          <div class="option-label text-block" data-i18n="size">التوافق</div>
+          <div class="size-options" id="pdSizes"></div>
+        </div>
+
+        <div class="option-group">
+          <div class="option-label text-block" data-i18n="quantity">الكمية</div>
+          <div class="qty-row">
+            <div class="qty-control">
+              <button id="pdQtyMinus" type="button">&minus;</button>
+              <span class="qty-val" id="pdQtyVal">1</span>
+              <button id="pdQtyPlus" type="button">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-error text-block" id="pdError"></div>
+        <button class="btn-primary text-block" id="pdAddBtn" data-i18n="addToCart">أضف إلى السلة</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CART / CHECKOUT DRAWER ================= -->
+<div class="overlay cart-overlay" id="cartOverlay">
+  <div class="cart-drawer" role="dialog" aria-modal="true">
+    <div class="cart-head">
+      <h2 id="cartHeadTitle" data-i18n="yourCart">سلتك</h2>
+      <button class="cart-close" id="cartCloseBtn" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- STEP 0: cart list -->
+    <div id="cartStepList" style="display:flex;flex-direction:column;flex:1;overflow:hidden;">
+      <div class="cart-body" id="cartItemsWrap">
+        <div class="cart-empty text-block" data-i18n="emptyCart">سلتك فارغة</div>
+      </div>
+      <div class="cart-summary" id="cartSummary" style="display:none;">
+        <div class="summary-row"><span class="text-block" data-i18n="subtotal">مجموع المنتجات</span><span class="price-num" id="sumSubtotal"></span></div>
+        <div class="summary-row"><span class="text-block" data-i18n="delivery">التوصيل</span><span class="price-num" id="sumDelivery">—</span></div>
+        <div class="summary-row total"><span class="text-block" data-i18n="total">المجموع النهائي</span><span class="price-num" id="sumTotal"></span></div>
+      </div>
+      <div class="cart-actions">
+        <button class="btn-primary text-block" id="checkoutBtn" data-i18n="checkout">إتمام الطلب</button>
+      </div>
+    </div>
+
+    <!-- STEP 1: customer form -->
+    <div class="checkout-step" id="checkoutStepForm" style="flex:1;overflow-y:auto;">
+      <div class="field">
+        <label class="text-block" data-i18n="fullName">الاسم الكامل</label>
+        <input type="text" id="inputName" class="text-block">
+        <div class="field-error text-block" id="errName"></div>
+      </div>
+      <div class="field">
+        <label class="text-block" data-i18n="phone">رقم الهاتف</label>
+        <input type="tel" id="inputPhone" placeholder="05XXXXXXXX">
+        <div class="field-error text-block" id="errPhone"></div>
+      </div>
+      <div class="field">
+        <label class="text-block" data-i18n="wilaya">الولاية</label>
+        <select id="inputWilaya" class="text-block"></select>
+        <div class="field-error text-block" id="errWilaya"></div>
+      </div>
+      <div class="cart-actions" style="padding:8px 0 0;">
+        <button class="btn-primary text-block" id="toReviewBtn" data-i18n="reviewOrder">مراجعة الطلب</button>
+        <button class="btn-secondary text-block" id="backToCartBtn" data-i18n="backToCart">العودة إلى السلة</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: review + confirm -->
+    <div class="order-review" id="orderReview" style="flex:1;overflow-y:auto;">
+      <div id="reviewItemsWrap"></div>
+      <div class="cart-summary" style="border:none;padding:0;">
+        <div class="summary-row"><span class="text-block" data-i18n="subtotal">مجموع المنتجات</span><span class="price-num" id="revSubtotal"></span></div>
+        <div class="summary-row"><span class="text-block" data-i18n="delivery">التوصيل</span><span class="price-num" id="revDelivery"></span></div>
+        <div class="summary-row total"><span class="text-block" data-i18n="total">المجموع النهائي</span><span class="price-num" id="revTotal"></span></div>
+      </div>
+      <div class="send-error text-block" id="sendError"></div>
+      <div class="cart-actions" style="padding:8px 0 0;">
+        <button class="btn-primary text-block" id="confirmOrderBtn" data-i18n="confirmOrder">تأكيد الطلب</button>
+        <button class="btn-secondary text-block" id="backToFormBtn" data-i18n="editInfo">تعديل المعلومات</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: success -->
+    <div class="success-panel" id="successPanel" style="flex:1;">
+      <div class="success-icon">&#10003;</div>
+      <div class="text-block" data-i18n="orderReceived">تم استلام طلبك بنجاح</div>
+      <div class="success-order-id" id="successOrderId"></div>
+      <p class="text-block" style="color:var(--ink-dim);font-size:13.5px;margin:0;" data-i18n="willCallYou">سنتصل بك قريبًا لتأكيد الطلب.</p>
+      <button class="btn-primary text-block" id="backToProductsBtn" data-i18n="backToProducts" style="margin-top:10px;">العودة إلى المنتجات</button>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

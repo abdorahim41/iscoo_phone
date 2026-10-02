@@ -411,6 +411,17 @@ function openProductDetail(product){
   renderPdViewer(0);
   renderProductDetail(product);
   pdOverlay.classList.add("open");
+
+  // Meta Pixel — ViewContent
+  if (typeof fbq === "function") {
+    fbq("track", "ViewContent", {
+      content_ids: [String(product.id)],
+      content_name: localized(product.name),
+      content_type: "product",
+      value: finalPrice(product),
+      currency: "DZD"
+    });
+  }
 }
 
 function closeProductDetail(){
@@ -636,23 +647,37 @@ function cartLineId(productId, colorName, size){
 }
 
 function addToCart(product, color, size, qty){
-  const lineId = cartLineId(product.id, color?color.name.en:null, size);
-  const existing = state.cart.find(i=>i.lineId===lineId);
+  const lineId = cartLineId(product.id, color ? color.name.en : null, size);
+  const existing = state.cart.find(i => i.lineId === lineId);
   const maxQty = product.stock;
+
   if(existing){
     existing.qty = Math.min(existing.qty + qty, maxQty);
   } else {
     state.cart.push({
-      lineId, productId:product.id,
-      name:product.name,
+      lineId,
+      productId: product.id,
+      name: product.name,
       image: color ? color.image : (product.mainImage || product.colors[0]?.image || ""),
-      unitPrice:finalPrice(product),
+      unitPrice: finalPrice(product),
       color: color ? color.name : null,
       size: size || null,
       qty: Math.min(qty, maxQty),
       maxQty
     });
   }
+
+  // Meta Pixel — AddToCart
+  if (typeof fbq === "function") {
+    fbq("track", "AddToCart", {
+      content_ids: [String(product.id)],
+      content_name: localized(product.name),
+      content_type: "product",
+      value: finalPrice(product) * qty,
+      currency: "DZD"
+    });
+  }
+
   saveCart();
   renderCart();
 }
@@ -753,9 +778,20 @@ cartOverlay.addEventListener("click", (e)=>{ if(e.target===cartOverlay) closeCar
 
 document.getElementById("checkoutBtn").addEventListener("click", ()=>{
   if(state.cart.length===0) return;
+
+  // Meta Pixel — InitiateCheckout
+  if (typeof fbq === "function") {
+    fbq("track", "InitiateCheckout", {
+      content_ids: state.cart.map(item => String(item.productId)),
+      content_type: "product",
+      num_items: cartCount(),
+      value: cartSubtotal() + currentDeliveryPrice(),
+      currency: "DZD"
+    });
+  }
+
   showStep("form");
 });
-document.getElementById("backToCartBtn").addEventListener("click", ()=> showStep("list"));
 
 
 /* =========================================================================
@@ -913,8 +949,20 @@ document.getElementById("confirmOrderBtn").addEventListener("click", async ()=>{
     total: cartSubtotal() + currentDeliveryPrice()
   };
 
-  try{
+try{
     await sendOrderToTelegram(order);
+
+    // Meta Pixel — Purchase
+    if (typeof fbq === "function") {
+      fbq("track", "Purchase", {
+        content_ids: order.items.map(item => String(item.productId)),
+        content_type: "product",
+        num_items: order.items.reduce((sum, item) => sum + item.qty, 0),
+        value: order.total,
+        currency: "DZD"
+      });
+    }
+
     state.lastOrder = order;
     state.cart = [];
     saveCart();

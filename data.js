@@ -203,9 +203,9 @@ const CATEGORIES = [
    (or update the paths here to point wherever you keep them, e.g. "images/hero-1.jpg").
    ========================================================================= */
 const HERO_IMAGES = [
-  "co.jfif",
-  "co1.jfif",
-  "hero.jpg"
+  "co.webp",
+  "co1.webp",
+  "hero.webp"
 ];
 
 
@@ -330,14 +330,14 @@ const PRODUCTS = [
         fr: "Coque anti-choc avec une poche dédiée pour carte, disponible en plusieurs couleurs et compatible avec plusieurs modèles d’iPhone."
     },
 
-    mainImage: "cases.png",
+    mainImage: "cases.webp",
 
     // "All colors together" shot, then a side view and a back view —
     // these play on the card automatically and open the product viewer.
     gallery: [
-        "cases.png",
-        "cases01.png",
-        "cases001.jpg"
+        "cases.webp",
+        "cases01.webp",
+        "cases001.webp"
     ],
 
     originalPrice: 2500,
@@ -348,27 +348,27 @@ const PRODUCTS = [
         {
             name: { ar: "أسود", en: "Black", fr: "Noir" },
             hex: "#000000",
-            image: "1case-black.png"
+            image: "1case-black.webp"
         },
         {
             name: { ar: "أزرق", en: "Blue", fr: "Bleu" },
             hex: "#0066FF",
-            image: "1case-blue.jpg"
+            image: "1case-blue.webp"
         },
         {
             name: { ar: "أبيض", en: "White", fr: "Blanc" },
             hex: "#FFFFFF",
-            image: "1case-white.png"
+            image: "1case-white.webp"
         },
         {
             name: { ar: "برتقالي", en: "Orange", fr: "Orange" },
             hex: "#FF7A00",
-            image: "1case-orange.png"
+            image: "1case-orange.webp"
         },
         {
             name: { ar: "وردي فاتح", en: "Light Pink", fr: "Rose Clair" },
             hex: "#FFB6C1",
-            image: "1case-rose.png"
+            image: "1case-rose.webp"
         }
     ],
 
@@ -414,12 +414,12 @@ const PRODUCTS = [
    fr: "Une coque iPhone élégante et moderne conçue pour offrir une protection fiable au quotidien. Elle protège l'écran et la caméra contre les rayures et les chocs tout en conservant un design élégant et confortable." 
   },
 
-    mainImage: "cases2.jpg",
+    mainImage: "cases2.webp",
 
     gallery: [
-      "cases2.jpg",
-      "cases02.jpg",
-      "cases002.jpg"
+      "cases2.webp",
+      "cases02.webp",
+      "cases002.webp"
     ],
 
     originalPrice: 2800,
@@ -429,28 +429,28 @@ const PRODUCTS = [
       {
         name: { ar: "أسود", en: "Black", fr: "Noir" },
         hex: "#000000",
-        image: "2case-black.jpg"
+        image: "2case-black.webp"
       },
       {
         name: { ar: "أزرق", en: "Blue", fr: "Bleu" },
         hex: "#0066FF",
-        image: "2case-blue.png"
+        image: "2case-blue.webp"
       },
       {
         name: { ar: "بني", en: "brown", fr: "Noir" },
         hex: "#c37142",
-        image: "2case-brown.jpg"
+        image: "2case-brown.webp"
       }
       ,
       {
         name: { ar: "رمادي", en: "gray", fr: "Noir" },
         hex: "#767676",
-        image: "2case-gray.jpg"
+        image: "2case-gray.webp"
       },
       {
         name: { ar: "برتقالي", en: "orange", fr: "Noir" },
         hex: "#ff3c01",
-        image: "2case-orange.jpg"
+        image: "2case-orange.webp"
       }
     ],
 
@@ -487,12 +487,12 @@ description: {
   fr: "Une coque iPhone au design moderne avec des ouvertures arrière pour favoriser la circulation de l'air, ainsi qu'un support intégré pliable pour regarder des vidéos confortablement et utiliser le téléphone en mode mains libres. Un design pratique et élégant pour un usage quotidien." 
 },
 
-    mainImage: "new-case.png",
+    mainImage: "new-case.webp",
 
     gallery: [
-      "cases3.jpg",
-      "cases03.jpg",
-      "3case-black.jpg"
+      "cases3.webp",
+      "cases03.webp",
+      "3case-black.webp"
     ],
 
     originalPrice: 2600,
@@ -502,17 +502,17 @@ description: {
       {
         name: { ar: "أسود", en: "Black", fr: "Noir" },
         hex: "#000000",
-        image: "3case-black.jpg"
+        image: "3case-black.webp"
       },
       {
         name: { ar: "أزرق", en: "Blue", fr: "Bleu" },
         hex: "#0066FF",
-        image: "3case-blue.jpg"
+        image: "3case-blue.webp"
       },
               {
             name: { ar: "أبيض", en: "White", fr: "Blanc" },
             hex: "#FFFFFF",
-            image: "3case-white.jpg"
+            image: "3case-white.webp"
         },
 
     ],

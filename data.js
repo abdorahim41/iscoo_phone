@@ -214,64 +214,64 @@ const HERO_IMAGES = [
    Edit the "price" field only; everything else renders automatically.
    ========================================================================= */
 const WILAYAS = [
-  {id:1,name:{ar:"أدرار",en:"Adrar",fr:"Adrar"},price:100},
-  {id:2,name:{ar:"الشلف",en:"Chlef",fr:"Chlef"},price:100},
-  {id:3,name:{ar:"الأغواط",en:"Laghouat",fr:"Laghouat"},price:100},
-  {id:4,name:{ar:"أم البواقي",en:"Oum El Bouaghi",fr:"Oum El Bouaghi"},price:100},
-  {id:5,name:{ar:"باتنة",en:"Batna",fr:"Batna"},price:100},
-  {id:6,name:{ar:"بجاية",en:"Béjaïa",fr:"Béjaïa"},price:100},
-  {id:7,name:{ar:"بسكرة",en:"Biskra",fr:"Biskra"},price:100},
-  {id:8,name:{ar:"بشار",en:"Béchar",fr:"Béchar"},price:100},
-  {id:9,name:{ar:"البليدة",en:"Blida",fr:"Blida"},price:100},
-  {id:10,name:{ar:"البويرة",en:"Bouira",fr:"Bouira"},price:100},
-  {id:11,name:{ar:"تمنراست",en:"Tamanrasset",fr:"Tamanrasset"},price:100},
-  {id:12,name:{ar:"تبسة",en:"Tébessa",fr:"Tébessa"},price:100},
-  {id:13,name:{ar:"تلمسان",en:"Tlemcen",fr:"Tlemcen"},price:100},
-  {id:14,name:{ar:"تيارت",en:"Tiaret",fr:"Tiaret"},price:100},
-  {id:15,name:{ar:"تيزي وزو",en:"Tizi Ouzou",fr:"Tizi Ouzou"},price:100},
-  {id:16,name:{ar:"الجزائر",en:"Algiers",fr:"Alger"},price:100},
-  {id:17,name:{ar:"الجلفة",en:"Djelfa",fr:"Djelfa"},price:100},
-  {id:18,name:{ar:"جيجل",en:"Jijel",fr:"Jijel"},price:100},
-  {id:19,name:{ar:"سطيف",en:"Sétif",fr:"Sétif"},price:100},
-  {id:20,name:{ar:"سعيدة",en:"Saïda",fr:"Saïda"},price:100},
-  {id:21,name:{ar:"سكيكدة",en:"Skikda",fr:"Skikda"},price:100},
-  {id:22,name:{ar:"سيدي بلعباس",en:"Sidi Bel Abbès",fr:"Sidi Bel Abbès"},price:100},
-  {id:23,name:{ar:"عنابة",en:"Annaba",fr:"Annaba"},price:100},
-  {id:24,name:{ar:"قالمة",en:"Guelma",fr:"Guelma"},price:100},
-  {id:25,name:{ar:"قسنطينة",en:"Constantine",fr:"Constantine"},price:100},
-  {id:26,name:{ar:"المدية",en:"Médéa",fr:"Médéa"},price:100},
-  {id:27,name:{ar:"مستغانم",en:"Mostaganem",fr:"Mostaganem"},price:100},
-  {id:28,name:{ar:"المسيلة",en:"M'Sila",fr:"M'Sila"},price:100},
-  {id:29,name:{ar:"معسكر",en:"Mascara",fr:"Mascara"},price:100},
-  {id:30,name:{ar:"ورقلة",en:"Ouargla",fr:"Ouargla"},price:100},
-  {id:31,name:{ar:"وهران",en:"Oran",fr:"Oran"},price:100},
-  {id:32,name:{ar:"البيض",en:"El Bayadh",fr:"El Bayadh"},price:100},
-  {id:33,name:{ar:"إليزي",en:"Illizi",fr:"Illizi"},price:100},
-  {id:34,name:{ar:"برج بوعريريج",en:"Bordj Bou Arréridj",fr:"Bordj Bou Arréridj"},price:100},
-  {id:35,name:{ar:"بومرداس",en:"Boumerdès",fr:"Boumerdès"},price:100},
-  {id:36,name:{ar:"الطارف",en:"El Tarf",fr:"El Tarf"},price:100},
-  {id:37,name:{ar:"تندوف",en:"Tindouf",fr:"Tindouf"},price:100},
-  {id:38,name:{ar:"تيسمسيلت",en:"Tissemsilt",fr:"Tissemsilt"},price:100},
-  {id:39,name:{ar:"الوادي",en:"El Oued",fr:"El Oued"},price:100},
-  {id:40,name:{ar:"خنشلة",en:"Khenchela",fr:"Khenchela"},price:100},
-  {id:41,name:{ar:"سوق أهراس",en:"Souk Ahras",fr:"Souk Ahras"},price:100},
-  {id:42,name:{ar:"تيبازة",en:"Tipaza",fr:"Tipaza"},price:100},
-  {id:43,name:{ar:"ميلة",en:"Mila",fr:"Mila"},price:100},
-  {id:44,name:{ar:"عين الدفلى",en:"Aïn Defla",fr:"Aïn Defla"},price:100},
-  {id:45,name:{ar:"النعامة",en:"Naâma",fr:"Naâma"},price:100},
-  {id:46,name:{ar:"عين تموشنت",en:"Aïn Témouchent",fr:"Aïn Témouchent"},price:100},
-  {id:47,name:{ar:"غرداية",en:"Ghardaïa",fr:"Ghardaïa"},price:100},
-  {id:48,name:{ar:"غليزان",en:"Relizane",fr:"Relizane"},price:100},
-  {id:49,name:{ar:"تيميمون",en:"Timimoun",fr:"Timimoun"},price:100},
-  {id:50,name:{ar:"برج باجي مختار",en:"Bordj Badji Mokhtar",fr:"Bordj Badji Mokhtar"},price:100},
-  {id:51,name:{ar:"أولاد جلال",en:"Ouled Djellal",fr:"Ouled Djellal"},price:100},
-  {id:52,name:{ar:"بني عباس",en:"Béni Abbès",fr:"Béni Abbès"},price:100},
-  {id:53,name:{ar:"عين صالح",en:"In Salah",fr:"In Salah"},price:100},
+  {id:1,name:{ar:"أدرار",en:"Adrar",fr:"Adrar"},price:1100},
+  {id:2,name:{ar:"الشلف",en:"Chlef",fr:"Chlef"},price:900},
+  {id:3,name:{ar:"الأغواط",en:"Laghouat",fr:"Laghouat"},price:1200},
+  {id:4,name:{ar:"أم البواقي",en:"Oum El Bouaghi",fr:"Oum El Bouaghi"},price:900},
+  {id:5,name:{ar:"باتنة",en:"Batna",fr:"Batna"},price:900},
+  {id:6,name:{ar:"بجاية",en:"Béjaïa",fr:"Béjaïa"},price:900},
+  {id:7,name:{ar:"بسكرة",en:"Biskra",fr:"Biskra"},price:1200},
+  {id:8,name:{ar:"بشار",en:"Béchar",fr:"Béchar"},price:1400},
+  {id:9,name:{ar:"البليدة",en:"Blida",fr:"Blida"},price:750},
+  {id:10,name:{ar:"البويرة",en:"Bouira",fr:"Bouira"},price:750},
+  {id:11,name:{ar:"تمنراست",en:"Tamanrasset",fr:"Tamanrasset"},price:1600},
+  {id:12,name:{ar:"تبسة",en:"Tébessa",fr:"Tébessa"},price:1000},
+  {id:13,name:{ar:"تلمسان",en:"Tlemcen",fr:"Tlemcen"},price:900},
+  {id:14,name:{ar:"تيارت",en:"Tiaret",fr:"Tiaret"},price:1000},
+  {id:15,name:{ar:"تيزي وزو",en:"Tizi Ouzou",fr:"Tizi Ouzou"},price:750},
+  {id:16,name:{ar:"الجزائر",en:"Algiers",fr:"Alger"},price:600},
+  {id:17,name:{ar:"الجلفة",en:"Djelfa",fr:"Djelfa"},price:1200},
+  {id:18,name:{ar:"جيجل",en:"Jijel",fr:"Jijel"},price:900},
+  {id:19,name:{ar:"سطيف",en:"Sétif",fr:"Sétif"},price:900},
+  {id:20,name:{ar:"سعيدة",en:"Saïda",fr:"Saïda"},price:1000},
+  {id:21,name:{ar:"سكيكدة",en:"Skikda",fr:"Skikda"},price:900},
+  {id:22,name:{ar:"سيدي بلعباس",en:"Sidi Bel Abbès",fr:"Sidi Bel Abbès"},price:900},
+  {id:23,name:{ar:"عنابة",en:"Annaba",fr:"Annaba"},price:900},
+  {id:24,name:{ar:"قالمة",en:"Guelma",fr:"Guelma"},price:1000},
+  {id:25,name:{ar:"قسنطينة",en:"Constantine",fr:"Constantine"},price:900},
+  {id:26,name:{ar:"المدية",en:"Médéa",fr:"Médéa"},price:750},
+  {id:27,name:{ar:"مستغانم",en:"Mostaganem",fr:"Mostaganem"},price:900},
+  {id:28,name:{ar:"المسيلة",en:"M'Sila",fr:"M'Sila"},price:900},
+  {id:29,name:{ar:"معسكر",en:"Mascara",fr:"Mascara"},price:900},
+  {id:30,name:{ar:"ورقلة",en:"Ouargla",fr:"Ouargla"},price:1200},
+  {id:31,name:{ar:"وهران",en:"Oran",fr:"Oran"},price:900},
+  {id:32,name:{ar:"البيض",en:"El Bayadh",fr:"El Bayadh"},price:1400},
+  {id:33,name:{ar:"إليزي",en:"Illizi",fr:"Illizi"},price:1600},
+  {id:34,name:{ar:"برج بوعريريج",en:"Bordj Bou Arréridj",fr:"Bordj Bou Arréridj"},price:900},
+  {id:35,name:{ar:"بومرداس",en:"Boumerdès",fr:"Boumerdès"},price:750},
+  {id:36,name:{ar:"الطارف",en:"El Tarf",fr:"El Tarf"},price:1000},
+  {id:37,name:{ar:"تندوف",en:"Tindouf",fr:"Tindouf"},price:1100},
+  {id:38,name:{ar:"تيسمسيلت",en:"Tissemsilt",fr:"Tissemsilt"},price:900},
+  {id:39,name:{ar:"الوادي",en:"El Oued",fr:"El Oued"},price:1200},
+  {id:40,name:{ar:"خنشلة",en:"Khenchela",fr:"Khenchela"},price:1000},
+  {id:41,name:{ar:"سوق أهراس",en:"Souk Ahras",fr:"Souk Ahras"},price:1000},
+  {id:42,name:{ar:"تيبازة",en:"Tipaza",fr:"Tipaza"},price:750},
+  {id:43,name:{ar:"ميلة",en:"Mila",fr:"Mila"},price:900},
+  {id:44,name:{ar:"عين الدفلى",en:"Aïn Defla",fr:"Aïn Defla"},price:900},
+  {id:45,name:{ar:"النعامة",en:"Naâma",fr:"Naâma"},price:1400},
+  {id:46,name:{ar:"عين تموشنت",en:"Aïn Témouchent",fr:"Aïn Témouchent"},price:900},
+  {id:47,name:{ar:"غرداية",en:"Ghardaïa",fr:"Ghardaïa"},price:1200},
+  {id:48,name:{ar:"غليزان",en:"Relizane",fr:"Relizane"},price:900},
+  {id:49,name:{ar:"تيميمون",en:"Timimoun",fr:"Timimoun"},price:1100},
+
+  {id:51,name:{ar:"أولاد جلال",en:"Ouled Djellal",fr:"Ouled Djellal"},price:1200},
+  {id:52,name:{ar:"بني عباس",en:"Béni Abbès",fr:"Béni Abbès"},price:1400},
+  {id:53,name:{ar:"عين صالح",en:"In Salah",fr:"In Salah"},price:1600},
   {id:54,name:{ar:"عين قزام",en:"In Guezzam",fr:"In Guezzam"},price:100},
-  {id:55,name:{ar:"تقرت",en:"Touggourt",fr:"Touggourt"},price:100},
-  {id:56,name:{ar:"جانت",en:"Djanet",fr:"Djanet"},price:100},
-  {id:57,name:{ar:"المغير",en:"El M'Ghair",fr:"El M'Ghair"},price:100},
-  {id:58,name:{ar:"المنيعة",en:"El Meniaa",fr:"El Meniaa"},price:100}
+  {id:55,name:{ar:"تقرت",en:"Touggourt",fr:"Touggourt"},price:1200},
+  {id:56,name:{ar:"جانت",en:"Djanet",fr:"Djanet"},price:2000},
+  {id:57,name:{ar:"المغير",en:"El M'Ghair",fr:"El M'Ghair"},price:1200},
+  {id:58,name:{ar:"المنيعة",en:"El Meniaa",fr:"El Meniaa"},price:1200}
 ];
 
 
@@ -437,18 +437,18 @@ const PRODUCTS = [
         image: "2case-blue.webp"
       },
       {
-        name: { ar: "بني", en: "brown", fr: "Noir" },
+        name: { ar: "بني", en: "brown", fr: "brown" },
         hex: "#c37142",
         image: "2case-brown.webp"
       }
       ,
       {
-        name: { ar: "رمادي", en: "gray", fr: "Noir" },
+        name: { ar: "رمادي", en: "gray", fr: "gray" },
         hex: "#767676",
         image: "2case-gray.webp"
       },
       {
-        name: { ar: "برتقالي", en: "orange", fr: "Noir" },
+        name: { ar: "برتقالي", en: "orange", fr: "orange" },
         hex: "#ff3c01",
         image: "2case-orange.webp"
       }
@@ -532,5 +532,73 @@ description: {
 
     stock: 50,
     available: true
+  },
+  
+ // المنتج 4
+  {
+    id: 4,
+
+  name: { 
+   ar: "Beats أونتي شوك آيفون ", 
+   en: "Beats iPhone Case", 
+    fr: "Coque iPhone Beats" 
+  }, 
+
+  category: { 
+   ar: "أونتي شوك آيفون", 
+   en: "iPhone Cases", 
+   fr: "Coques iPhone" 
+  }, 
+
+  description: { 
+   ar: "أونتي شوك أنيق وعصري يوفر حماية قوية لهاتفك مع تصميم عملي ومريح للاستخدام اليومي. يحمي الهاتف والكاميرا من الخدوش والصدمات، مع تصميم أنيق يحافظ على شكل هاتفك.", 
+    en: "A stylish and modern iPhone case designed to provide reliable everyday protection. It helps protect your screen and camera from scratches and impacts while maintaining a sleek and comfortable design.", 
+   fr: "Une coque iPhone élégante et moderne conçue pour offrir une protection fiable au quotidien. Elle protège l'écran et la caméra contre les rayures et les chocs tout en conservant un design élégant et confortable." 
+  },
+
+    mainImage: "case4blue.png",
+
+    gallery: [
+      "case4blue.png",
+      "case4black.webp",
+      "case4rose.jpg"
+    ],
+
+    originalPrice: 4000,
+    discount: 12.5,
+
+    colors: [
+      {
+        name: { ar: "أسود", en: "Black", fr: "Noir" },
+        hex: "#000000",
+        image: "case4black.webp"
+      },
+      {
+        name: { ar: "أزرق", en: "Blue", fr: "Bleu" },
+        hex: "#5d8bf5",
+        image: "case4blue.png"
+      },
+      {
+        name: { ar: "وردي", en: "rose", fr: "rose" },
+        hex: "#fa70d1",
+        image: "case4rose.jpg"
+      }
+      ,
+      {
+        name: { ar: "بغاندي", en: "burgundy", fr: "burgundy" },
+        hex: "#2d0013",
+        image: "casse4burgundy.png"
+      },
+     
+    ],
+
+    sizes: [
+      "IP 17 PRO MAX",
+      "IP 18 "
+    ],
+
+    stock: 50,
+    available: true
   }
 ];
+

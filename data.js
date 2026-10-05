@@ -340,9 +340,9 @@ const PRODUCTS = [
         "cases001.webp"
     ],
 
-    originalPrice: 2500,
+    originalPrice: 1900,
 
-    discount: 12,
+    discount: 10.53,
 
     colors: [
         {
@@ -387,7 +387,7 @@ const PRODUCTS = [
         "IP 16 PLUS"
     ],
 
-    stock: 100,
+    stock: 0,
 
     available: true
   },
@@ -422,8 +422,8 @@ const PRODUCTS = [
       "cases002.webp"
     ],
 
-    originalPrice: 2800,
-    discount: 14.29,
+    originalPrice: 2500,
+    discount: 24,
 
     colors: [
       {
@@ -495,8 +495,8 @@ description: {
       "3case-black.webp"
     ],
 
-    originalPrice: 2600,
-    discount: 15.38,
+    originalPrice: 2500,
+    discount: 24,
 
     colors: [
       {
